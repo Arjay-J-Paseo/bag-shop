@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - BagShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.png" alt="BagShop Logo"></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="collections.html" class="nav-link">Collections</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="cart.html" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="cart-container">
+
+        <div class="cart-items">
+            <div class="cart-header">
+                <h1 class="cart-title">Shopping Cart</h1>
+                <span class="cart-count">2 Items</span>
+            </div>
+
+            <div class="cart-item">
+                <img src="../images/bag1.jpg" alt="Classic Leather Bag" class="cart-item-image">
+                <div class="cart-item-details">
+                    <div>
+                        <h3 class="cart-item-title">Classic Leather Tote Bag</h3>
+                        <p class="cart-item-color">Color: Brown</p>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="updateQuantity('item1', -1)">-</button>
+                            <input type="number" id="item1-qty" class="quantity-input" value="1" min="1" max="10">
+                            <button class="quantity-btn" onclick="updateQuantity('item1', 1)">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">
+                        <span class="price-symbol">$</span>299.99
+                    </div>
+                </div>
+                <button class="remove-btn" onclick="removeItem('item1')">
+                    <i class="fas fa-trash"></i>
+                    Remove
+                </button>
+            </div>
+
+            <div class="cart-item">
+                <img src="../images/bag2.jpg" alt="Travel Backpack" class="cart-item-image">
+                <div class="cart-item-details">
+                    <div>
+                        <h3 class="cart-item-title">Premium Travel Backpack</h3>
+                        <p class="cart-item-color">Color: Black</p>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="updateQuantity('item2', -1)">-</button>
+                            <input type="number" id="item2-qty" class="quantity-input" value="1" min="1" max="10">
+                            <button class="quantity-btn" onclick="updateQuantity('item2', 1)">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">
+                        <span class="price-symbol">$</span>149.99
+                    </div>
+                </div>
+                <button class="remove-btn" onclick="removeItem('item2')">
+                    <i class="fas fa-trash"></i>
+                    Remove
+                </button>
+            </div>
+        </div>
+
+
+        <div class="order-summary">
+            <h2 class="summary-title">Order Summary</h2>
+            
+            <div class="summary-row">
+                <span>Subtotal (2 items)</span>
+                <span>P449.98</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+            <div class="summary-row">
+                <span>Tax</span>
+                <span>P45.00</span>
+            </div>
+
+            <div class="promo-code">
+                <label for="promo">Promo Code</label>
+                <div class="promo-input">
+                    <input type="text" id="promo" placeholder="Enter code">
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <span>P494.98</span>
+            </div>
+
+            <button class="checkout-btn">
+                <i class="fas fa-lock"></i>
+                Proceed to Checkout
+            </button>
+
+            <div class="payment-methods">
+                <h4>Secure Payment Methods</h4>
+                <div class="payment-icons">
+                    <img src="../images/visa.jpg" alt="Visa" class="payment-icon">
+                    <img src="../images/mastercard.jpg" alt="Mastercard" class="payment-icon">
+                    <img src="../images/amex.jpg" alt="American Express" class="payment-icon">
+                    <img src="../images/paypal.jpg" alt="PayPal" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BagShop</h3>
+                    <p>Premium bags and accessories for every occasion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: infotec@bagshop.com</p>
+                    <p>Phone: (555) 999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; BagShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html> 

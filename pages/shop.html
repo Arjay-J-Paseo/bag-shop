@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - BagShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.png" alt="BagShop Logo"></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="collections.html" class="nav-link">Collections</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link cart-icon">Cart (0)</a>
+                <a href="login.html" class="nav-link login-link">
+                    <i class="fas fa-user"></i>Login
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="shop-container">
+        <aside class="filters-sidebar">
+            <div class="filter-section">
+                <h3 class="filter-title">Categories</h3>
+                <div class="filter-content">
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="handbags">
+                        <span class="checkmark"></span>
+                        Handbags
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="backpacks">
+                        <span class="checkmark"></span>
+                        Backpacks
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="category" value="travel-bags">
+                        <span class="checkmark"></span>
+                        Travel Bags
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Price Range</h3>
+                <div class="filter-content price-range">
+                    <input type="number" placeholder="Min" class="price-input">
+                    <span class="price-separator">-</span>
+                    <input type="number" placeholder="Max" class="price-input">
+                    <button class="apply-price">Apply</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Brand</h3>
+                <div class="filter-content">
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="premium">
+                        <span class="checkmark"></span>
+                        Premium Collection
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="luxury">
+                        <span class="checkmark"></span>
+                        Luxury Line
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="classic">
+                        <span class="checkmark"></span>
+                        Classic Series
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Customer Review</h3>
+                <div class="filter-content">
+                    <label class="filter-option">
+                        <input type="checkbox" name="rating" value="5">
+                        <span class="checkmark"></span>
+                        <span class="stars">★★★★★</span> & Up
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="rating" value="4">
+                        <span class="checkmark"></span>
+                        <span class="stars">★★★★</span> & Up
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="rating" value="3">
+                        <span class="checkmark"></span>
+                        <span class="stars">★★★</span> & Up
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Color</h3>
+                <div class="filter-content">
+                    <label class="filter-option">
+                        <input type="checkbox" name="color" value="black">
+                        <span class="checkmark"></span>
+                        Black
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="color" value="brown">
+                        <span class="checkmark"></span>
+                        Brown
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="color" value="navy">
+                        <span class="checkmark"></span>
+                        Navy
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <section class="products-section">
+            <div class="products-header">
+                <h1>All Products</h1>
+                <div class="sort-section">
+                    <select class="sort-dropdown">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="sale-badge">20% OFF</div>
+                    <img src="../images/handbag1.jpg" alt="Classic Leather Bag" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Classic Leather Tote Bag</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">P399.99</span>
+                            <span class="discount-price">P299.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/bagpac2.jpg" alt="Travel Backpack" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Travel Backpack with Laptop Compartment</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">(856)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">P700.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="sale-badge">Limited Time</div>
+                    <img src="../images/handbag3.jpg" alt="Luxury Handbag" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Luxury Designer Handbag - Limited Edition</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(2,456)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">P499.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/bagpac1.jpg" alt="Casual Backpack" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Casual Daily Backpack with USB Charging Port</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">(678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">P499.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="sale-badge">New</div>
+                    <img src="../images/handbag2.jpg" alt="Mini Crossbody" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Mini Crossbody Bag with Chain Strap</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(342)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">P299</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/bagpac3.jpg" alt="Weekend Duffle" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Weekend Duffle Bag with Shoe Compartment</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">(567)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">P500</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="../images/travelbag1.jpg" alt="Global Traveler Carry-on" class="product-image">
+                    <div class="product-info">
+                        <h3>Global Traveler Carry-on</h3>
+                        <p class="description">TSA-approved spinner with expandable capacity</p>
+                        <p class="price">P249.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+               
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="../images/travelbag2.jpg" alt="Adventure Duffel" class="product-image">
+                    <div class="product-info">
+                        <h3>Adventure Duffel</h3>
+                        <p class="description">Water-resistant 60L duffel with detachable straps</p>
+                        <p class="price">P279.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+               
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="../images/travelbag3.jpg" alt="Executive Garment Bag" class="product-image">
+                    <div class="product-info">
+                        <h3>Executive Garment Bag</h3>
+                        <p class="description">Premium garment bag with multiple compartments</p>
+                        <p class="price">P399.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Limited Edition</div>
+                    <img src="../images/luxbag4.jpg" alt="The Royal Tote" class="product-image">
+                    <div class="product-info">
+                        <h3>The Royal Tote</h3>
+                        <p class="description">Hand-stitched calfskin leather with 24k gold-plated hardware</p>
+                        <p class="price">P1,499.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="product-card">
+                    <div class="product-badge">Bestseller</div>
+                    <img src="../images/luxbag1.jpg" alt="The Duchess Satchel" class="product-image">
+                    <div class="product-info">
+                        <h3>The Duchess Satchel</h3>
+                        <p class="description">Python-embossed leather with platinum-finish details</p>
+                        <p class="price">P1,899.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="product-card">
+                    <div class="product-badge">New Arrival</div>
+                    <img src="../images/luxbag2.jpg" alt="The Imperial Clutch" class="product-image">
+                    <div class="product-info">
+                        <h3>The Imperial Clutch</h3>
+                        <p class="description">Exotic crocodile leather with diamond-encrusted clasp</p>
+                        <p class="price">P1,299.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+               
+                <div class="product-card">
+                    <img src="../images/luxbag3.jpg" alt="The Sovereign Shoulder Bag" class="product-image">
+                    <div class="product-info">
+                        <h3>The Sovereign Shoulder Bag</h3>
+                        <p class="description">Full-grain leather with hand-painted edges</p>
+                        <p class="price">P1,699.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shipping.html">Shipping</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@bagshop.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Bag Street, Fashion District</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BagShop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

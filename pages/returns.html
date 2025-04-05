@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns & Refunds - BagShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/returns.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="BagShop Logo"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Returns & Refunds</h1>
+            <p>Easy returns within 30 days of purchase</p>
+        </section>
+
+        <section class="returns-process container">
+            <h2>Return Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Step 1: Initiate Return</h3>
+                    <p>Log into your account and select the order you wish to return. Fill out our simple return form.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <h3>Step 2: Get Label</h3>
+                    <p>Print your prepaid return shipping label and packing slip provided via email.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Step 3: Pack Items</h3>
+                    <p>Pack your items securely in their original packaging with all tags attached.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Step 4: Ship</h3>
+                    <p>Drop off your package at any authorized shipping location or schedule a pickup.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="return-policy container">
+            <h2>Return Policy</h2>
+            <div class="policy-grid">
+                <div class="policy-card">
+                    <h3>Eligible Items</h3>
+                    <ul>
+                        <li>Unused items in original condition</li>
+                        <li>All tags must be attached</li>
+                        <li>Original packaging included</li>
+                        <li>Within 30 days of delivery</li>
+                    </ul>
+                </div>
+
+                <div class="policy-card">
+                    <h3>Non-Returnable Items</h3>
+                    <ul>
+                        <li>Sale or clearance items</li>
+                        <li>Personalized items</li>
+                        <li>Used or damaged goods</li>
+                        <li>Gift cards</li>
+                    </ul>
+                </div>
+
+                <div class="policy-card">
+                    <h3>Refund Process</h3>
+                    <ul>
+                        <li>Original payment method</li>
+                        <li>Processing time: 5-7 days</li>
+                        <li>Free return shipping</li>
+                        <li>Full refund guaranteed</li>
+                    </ul>
+                </div>
+
+                <div class="policy-card">
+                    <h3>Exchange Options</h3>
+                    <ul>
+                        <li>Size exchanges available</li>
+                        <li>Color variations allowed</li>
+                        <li>Store credit option</li>
+                        <li>Quick processing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="return-form container">
+            <h2>Start Your Return</h2>
+            <form class="return-request-form">
+                <div class="form-group">
+                    <label for="order-number">Order Number</label>
+                    <input type="text" id="order-number" required placeholder="Enter your order number">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Return Reason</label>
+                    <select id="reason" required>
+                        <option value="">Select a reason</option>
+                        <option value="wrong-size">Wrong Size</option>
+                        <option value="not-as-described">Not as Described</option>
+                        <option value="damaged">Damaged/Defective</option>
+                        <option value="changed-mind">Changed Mind</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" rows="4" placeholder="Please provide any additional details"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Return Request</button>
+            </form>
+        </section>
+
+        <section class="faq container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long do I have to return an item?</h3>
+                    <p>You have 30 days from the delivery date to initiate a return. Items must be unused and in their original condition with all tags attached.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is return shipping free?</h3>
+                    <p>Yes, we provide free return shipping labels for all domestic returns within the United States.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>When will I receive my refund?</h3>
+                    <p>Once we receive your return, we'll process it within 2-3 business days. Refunds typically appear in your account within 5-7 business days.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I exchange an item instead of returning it?</h3>
+                    <p>Yes, you can request an exchange for a different size or color. Simply select the exchange option when initiating your return.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="tel:+1234567890">(555) 999-9999</a></li>
+                    <li><a href="mailto:info@bagshop.com">infotec@bagshop.com</a></li>
+                    <li>123 Fashion Street</li>
+                    <li>New York, NY 10001</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BagShop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

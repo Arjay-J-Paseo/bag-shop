@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bags - BagShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.png" alt="BagShop Logo"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="nav-link cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="nav-link login-link">
+                        <i class="fas fa-user"></i>Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="category-page travel">
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a> /
+                <a href="shop.html">Shop</a> /
+                <span>Travel Bags</span>
+            </div>
+        </div>
+
+        <section class="category-header">
+            <div class="container">
+                <h1>Travel Bags</h1>
+                <p>Explore our collection of durable and stylish travel bags for every journey</p>
+            </div>
+        </section>
+
+        <section class="category-content">
+            <div class="container">
+                <div class="shop-grid">
+                    <aside class="filters">
+                        <div class="filter-section">
+                            <h3>Type</h3>
+                            <ul class="filter-list">
+                                <li>
+                                    <input type="checkbox" id="carry-on">
+                                    <label for="carry-on">Carry-on Luggage</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="checked">
+                                    <label for="checked">Checked Luggage</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="duffel">
+                                    <label for="duffel">Duffel Bags</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="weekender">
+                                    <label for="weekender">Weekender Bags</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="garment">
+                                    <label for="garment">Garment Bags</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-section">
+                            <h3>Capacity</h3>
+                            <ul class="filter-list">
+                                <li>
+                                    <input type="checkbox" id="small">
+                                    <label for="small">Small (Under 20L)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="medium">
+                                    <label for="medium">Medium (20-40L)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="large">
+                                    <label for="large">Large (40-60L)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="extra-large">
+                                    <label for="extra-large">Extra Large (60L+)</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-section">
+                            <h3>Features</h3>
+                            <ul class="filter-list">
+                                <li>
+                                    <input type="checkbox" id="tsa-lock">
+                                    <label for="tsa-lock">TSA-Approved Lock</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="wheels">
+                                    <label for="wheels">Spinner Wheels</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="expandable">
+                                    <label for="expandable">Expandable</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="water-resistant">
+                                    <label for="water-resistant">Water Resistant</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-section">
+                            <h3>Price Range</h3>
+                            <div class="price-range">
+                                <input type="range" min="0" max="1000" value="500" class="price-slider">
+                                <div class="price-inputs">
+                                    <input type="number" min="0" max="1000" value="0" class="min-price">
+                                    <span>to</span>
+                                    <input type="number" min="0" max="1000" value="500" class="max-price">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary apply-filters">Apply Filters</button>
+                        <button class="btn btn-secondary clear-filters">Clear All</button>
+                    </aside>
+
+                    <div class="products-section">
+                        <div class="products-header">
+                            <div class="results-count">
+                                <p>Showing 1-12 of 42 products</p>
+                            </div>
+                            <div class="sort-options">
+                                <select name="sort" id="sort">
+                                    <option value="featured">Featured</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="newest">Newest</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="products-grid">
+                            
+                            <div class="product-card">
+                                <div class="product-badge">Best Seller</div>
+                                <img src="../images/travelbag1.jpg" alt="Global Traveler Carry-on" class="product-image">
+                                <div class="product-info">
+                                    <h3>Global Traveler Carry-on</h3>
+                                    <p class="description">TSA-approved spinner with expandable capacity</p>
+                                    <p class="price">P249.99</p>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+
+                           
+                            <div class="product-card">
+                                <div class="product-badge">New</div>
+                                <img src="../images/travelbag2.jpg" alt="Adventure Duffel" class="product-image">
+                                <div class="product-info">
+                                    <h3>Adventure Duffel</h3>
+                                    <p class="description">Water-resistant 60L duffel with detachable straps</p>
+                                    <p class="price">P279.99</p>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+
+                           
+                            <div class="product-card">
+                                <div class="product-badge">Sale</div>
+                                <img src="../images/travelbag3.jpg" alt="Executive Garment Bag" class="product-image">
+                                <div class="product-info">
+                                    <h3>Executive Garment Bag</h3>
+                                    <p class="description">Premium garment bag with multiple compartments</p>
+                                    <p class="price">P399.99</p>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="pagination">
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">4</button>
+                            <button class="pagination-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Lifetime Warranty</h3>
+                        <p>On all travel bags</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-plane"></i>
+                        <h3>Airline Approved</h3>
+                        <p>Meets carry-on requirements</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <h3>Free Shipping</h3>
+                        <p>On all orders</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>Travel Experts</h3>
+                        <p>24/7 support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="travel-guide">
+            <div class="container">
+                <h2>Travel Bag Buying Guide</h2>
+                <div class="guide-grid">
+                    <div class="guide-item">
+                        <i class="fas fa-plane"></i>
+                        <h3>Airline Compliance</h3>
+                        <p>Check size restrictions for carry-on and checked luggage</p>
+                    </div>
+                    <div class="guide-item">
+                        <i class="fas fa-suitcase"></i>
+                        <h3>Durability</h3>
+                        <p>Look for quality materials and construction</p>
+                    </div>
+                    <div class="guide-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Security</h3>
+                        <p>Consider TSA-approved locks and anti-theft features</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get special offers and new arrival notifications</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="form-control">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BagShop</h3>
+                <p>Your premier destination for premium bags and accessories.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: infotec@bagshop.com</p>
+                <p>Phone: (555) 999-9999</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; BagShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
