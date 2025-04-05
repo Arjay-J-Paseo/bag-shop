@@ -1,0 +1,225 @@
+:root {
+    --primary-pink: #FF69B4;
+    --secondary-pink: #FFB6C1;
+    --accent-pink: #FFC0CB;
+    --light-text: #FFFFFF;
+    --dark-text: #333333;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+    color: var(--light-text);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.gift-cards-section {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.gift-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: var(--light-text);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.gift-card-options h2 {
+    color: var(--dark-text);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.amount-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.amount-option {
+    background: var(--light-text);
+    border: 2px solid var(--primary-pink);
+    color: var(--primary-pink);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-option:hover {
+    background: var(--primary-pink);
+    color: var(--light-text);
+}
+
+.custom-amount input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--secondary-pink);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.preview-card {
+    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--light-text);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.card-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.add-to-cart-btn {
+    background: var(--primary-pink);
+    color: var(--light-text);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background: var(--secondary-pink);
+}
+
+.gift-card-info {
+    background: var(--secondary-pink);
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--light-text);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    color: var(--primary-pink);
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.info-card ol, .info-card ul {
+    color: var(--dark-text);
+    line-height: 1.6;
+    padding-left: 1.5rem;
+}
+
+.redeem-section {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.redeem-section h2 {
+    color: var(--dark-text);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.redeem-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.redeem-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--secondary-pink);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.redeem-btn {
+    background: var(--primary-pink);
+    color: var(--light-text);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.redeem-btn:hover {
+    background: var(--secondary-pink);
+}
+
+@media (max-width: 768px) {
+    .gift-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .amount-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .gift-cards-section {
+        padding: 0 1rem;
+    }
+
+    .redeem-form {
+        flex-direction: column;
+    }
+} 
